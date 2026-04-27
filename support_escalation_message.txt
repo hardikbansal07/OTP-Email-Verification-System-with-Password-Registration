@@ -1,0 +1,41 @@
+I understand you mentioned SMTP is enabled, but I'm still unable to connect. Let me be very specific about the issue:
+
+**What's Happening:**
+- Connection to smtpout.secureserver.net:465 gets established
+- Server immediately closes connection before authentication
+- Error: "Connection unexpectedly closed" (SMTPServerDisconnected)
+
+**What I've Already Tested:**
+✅ Port 465 (SSL) - FAILED
+✅ Port 587 (STARTTLS) - FAILED  
+✅ Multiple passwords tried
+✅ Verified settings from email panel (screenshot attached earlier)
+✅ Network connectivity is fine (can reach server)
+
+**The Problem:**
+The server ACCEPTS the initial connection but REJECTS it immediately. This is NOT a network issue or wrong settings - the server is actively rejecting my authentication attempts.
+
+**What I Need from YOU (GoDaddy Support):**
+
+1. **Check the server logs** for your_email@example.com
+   - Why is the server closing connections?
+   - Is there an IP block or restriction?
+   
+2. **Verify these settings are correct:**
+   - SMTP Server: smtpout.secureserver.net
+   - Port: 465 (SSL)
+   - Username: your_email@example.com
+   - Is this the correct password to use for SMTP?
+
+3. **Account Configuration:**
+   - Is "External Application Access" enabled for this email?
+   - Are there any SMTP restrictions on this account?
+   - Do I need to whitelist my IP address?
+
+4. **Test from your end:**
+   - Can YOU successfully connect to SMTP using these credentials?
+   - If yes, send me the exact working Python/code example
+
+**Please don't refer me elsewhere** - GoDaddy hosts my email (myprofessionalmail.com), so you ARE the hosting provider for SMTP. I need specific technical help, not circular references.
+
+Can you please check the server logs and tell me exactly why connections are being rejected?

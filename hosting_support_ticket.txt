@@ -1,0 +1,37 @@
+Subject: SMTP Connection Issue - your_email@example.com
+
+Hello Support Team,
+
+I am unable to connect to the SMTP server for my email account: your_email@example.com
+
+**Issue Details:**
+- Email account: your_email@example.com
+- SMTP Server: smtpout.secureserver.net
+- Port: 465 (SSL/TLS)
+- Error: "Connection unexpectedly closed" / "SMTPServerDisconnected"
+
+**What I've tried:**
+1. Verified SMTP settings from email configuration panel
+2. Tested with multiple passwords
+3. Tried both port 465 (SSL) and port 587 (STARTTLS)
+4. Tested with different SMTP connection methods
+
+**Problem:**
+Every connection attempt is rejected by the server immediately after establishing the initial connection. The server closes the connection before authentication.
+
+**Questions:**
+1. Is SMTP enabled for this email account (your_email@example.com)?
+2. Do I need to enable "External applications" or "SMTP access" in settings?
+3. Is there a separate SMTP password or app password required?
+4. Are there any IP restrictions or firewall rules blocking SMTP connections?
+5. Can you check the server logs to see why connections are being rejected?
+
+**What I need:**
+- Confirmation that SMTP is enabled for your_email@example.com
+- Correct SMTP server, port, and authentication details
+- Any additional settings needed to allow SMTP connections
+
+Please help me resolve this issue so I can use this email account for sending automated emails from my application.
+
+Thank you,
+[Your Name]

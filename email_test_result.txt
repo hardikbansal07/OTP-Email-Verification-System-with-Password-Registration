@@ -1,0 +1,4 @@
+❌ FAILED
+======================================================================
+Error: Connection unexpectedly closed
+Error Type: SMTPServerDisconnected
